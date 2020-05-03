@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {  
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;  
+    background-color: #FFFFFF;    
+}
+
+h1,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #FF7931;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    min-width: initial;
+    height: 1px;
+    min-height: initial;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.page-header {
+    width: 1171px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 47px;
+}
+
+.main-navigation,
+.page-footer-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color: #FF7931;
+}
+
+.banner {
+    margin-bottom: 44px;
+    width: 100%;
+}
+
+.banner-wrapper {
+    background-image: url("../img/underwater-hotel.jpg");
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 136px;
+    padding-bottom: 46px;
+}
+
+.banner-wrapper:hover::before {
+    content: "НОВОE";
+    position: absolute;
+    padding: 5px 25px;
+    top: 0;
+    left: 135px;
+    background-color: #FF7931;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 693px;
+    top: 46px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #FF7931 url("../img/gallery_ico.svg") center no-repeat;
+} 
+
+.banner-wrapper h2 {
+    padding-bottom: 135px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner-wrapper p {
+    width: 456px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.review {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.review h2 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 1.17;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-item {
+    margin-right: 29px;
+    width: 370px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.review-item a:hover p {
+    color: #000;
+}
+
+.review-title {
+    margin: 20px 0 11px;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.subscription {
+    background: #F7F7F7 url("../img/subscription-bg.png") no-repeat center;    
+}
+
+.subscription-wrapper {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.subscription-title {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 1.17;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subscription-list {
+    width: 370px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription-list-item {
+    position: relative;
+    margin-bottom: 25px;
+ }
+
+ .subscription-list-item:nth-child(-n+2):after {
+    content: ""; 
+    position: absolute; 
+    bottom: -24px;
+    left: 135px; 
+    width: 100px; 
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transform: rotate(0.1deg);    
+}
+
+.subscription-list-item h3 {
+    margin: 10px 0 10px;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+    padding-right: 60px;    
+    margin-bottom: 36px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #FF7931;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 27px;
+    width: 24px;
+    height: 25px;
+    background-image: url("../img/btn-icon.svg");
+}
+
+.page-footer {
+    background-color: #575757;
+    padding-bottom: 45px;
+}
+
+.page-footer-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.page-footer-logo {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.32;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.page-footer-navigation .site-navigation {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.page-footer-navigation .site-navigation::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    width: 100%;
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.page-footer-navigation .site-navigation a {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.page-footer-navigation .site-navigation a:hover {
+    color: #FF7931;
+}
+
+.social-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    background-color: #FFFFFF;
+    margin-top: 42px;
+    margin-left: 14px;
+}
+
+.social-btn:hover {
+    background-color: #FF7931;
+}
+
+.insta {
+    background: #FFFFFF url("../img/insta_icon.svg") no-repeat 50% 50%;
+}
+
+.fb {
+    background: #FFFFFF url("../img/facebook_icon.svg") no-repeat 50% 50%;
+}
+
+.twitter {
+    background: #FFFFFF url("../img/twitter_icon.svg") no-repeat 50% 50%;
+}
